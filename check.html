@@ -9,16 +9,16 @@
 
 <p>通往软件界面的密码：</p>
 <input id="numb">
-<button type="button" onclick="myFunction()">提交</button>
+<button type="button" onclick="myFunction()">验证</button>
 <p id="demo"></p>
 <script>
 function myFunction() {
-    var x, text;1
+    var x, text;
     x = document.getElementById("numb").value;
     if (x=="VHJC-THE-BEST") {
         text="vhjc.github.io/software";
     } else {
-        text="输入正确";
+        text="输入错误!";
     }
     document.getElementById("demo").innerHTML=text;
 }
